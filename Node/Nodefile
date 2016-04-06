@@ -1,0 +1,37 @@
+#Build Process
+npm install -g grunt
+npm install -g grunt-cli
+npm install -g gulp
+
+#istanbul-harmony
+#istanbul-traceur
+
+#Tests
+npm install -g karma
+npm install -g karma-coverage
+npm install -g mocha
+npm install -g mocha-traceur
+
+#ES6
+npm install -g babel
+npm install -g regenerator
+npm install -g traceur
+
+#Tools
+npm install -g travis
+npm install -g eslint
+npm install -g nodemon
+npm install -g express
+npm install -g bower
+npm install -g http-server
+
+#Android
+npm install -g clogcat
+
+#Yo
+npm install -g yo
+npm install -g generator-flux-webapp
+npm install -g generator-jhipster
+npm install -g generator-node-gulp
+npm install -g generator-reveal
+npm install -g generator-rise

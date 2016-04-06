@@ -1,0 +1,26 @@
+export NVM_DIR=~/.nvm
+export SCALAENV_ROOT=/usr/local/var/scalaenv
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export JENV_ROOT=/usr/local/opt/jenv
+export JAVA_HOME=/Library/Java/JavaVirtualMachine/jdk1.8.0_45.jdk/Contents/Home
+export JAVA7_HOME=/usr/local/opt/jenv/versions/1.7
+export JAVA8_HOME=/usr/local/opt/jenv/versions/1.8
+export PRIV=~/Priv
+export OSX_CONFIG=$PRIV/OSX-Config
+export MOBBE_HOME=$PRIV/Mobbe
+export DOCKER_HOST="tcp://$(boot2docker ip 2>/dev/null):2375"
+export ANDROID_HOME=~/Library/Android/sdk/
+export PATH="$HOME/.rvm/bin:$PATH"
+export PATH="$MOBBE_HOME/mf-server/scripts:$PATH"
+export PATH="$HOME/Projects/platform/scripts:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="$HOME/.spark/bin:$PATH"
+export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+export PATH="/usr/local/opt/go/libexec/bin:$PATH"
+export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export DEV_ENV_HOST=api1-zotest
+export NODEJS_CONFIG_PATH=/opt/nodejs-apps/config/node-apps-config.json
+export ENVIRONMENT_NAME=DEV
+export GOROOT=~/Priv/Go
+export GOPATH=~/Priv/Go
+export NODEJS_CONFIG_PATH=/opt/node/node-apps-config.json

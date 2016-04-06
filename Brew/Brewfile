@@ -1,0 +1,75 @@
+tap imwithye/formula
+tap homebrew/versions
+tap caskroom/versions
+tap bripkens/dock
+
+install caskroom/cask/brew-cask
+
+#Git
+install git
+install git-flow
+install git-open
+install git-ignore
+install legit
+
+# Server
+install heroku-toolbelt
+
+# DevOps
+install ansible
+install docker
+install zookeeper
+install mesos
+install dock
+
+#ODBC
+install freetds
+install unixodbc
+link --force unixodbc
+
+#GO
+install go
+
+#Scala
+install scala
+install typesafe-activator
+install sbt
+install scalaenv
+
+#Shell
+install zsh
+install ccat
+install bash-completion
+install mackup
+install wget
+install fswatch
+install thefuck
+
+#Java
+install jenv
+install jq
+install maven
+install tomcat7
+
+#Clojure
+install leiningen
+
+#Haskell
+install ghc
+install cabal-install
+
+#DB
+install postgresql
+install mongodb
+install pgcli
+
+#Tools
+install highlight
+install imagemagick
+install s3cmd
+install ttyrec
+install ffmpeg
+install https://raw.githubusercontent.com/icholy/ttygif/master/ttygif.rb
+install xmlstarlet
+install pandoc
+install pstree
