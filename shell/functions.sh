@@ -79,10 +79,8 @@ function sit() {
 alias g=sit
 
 function init() {
-    # eval "$(scalaenv init -)"
-    # eval "$(jenv init -)"
-    source /Users/arturskowronski/.nvm/nvm.sh
-    nvm use 0.12
+    eval "$(scalaenv init -)"
+    eval "$(jenv init -)"
     export SDKMAN_DIR="/Users/arturskowronski/.sdkman"
     [[ -s "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh"
 }

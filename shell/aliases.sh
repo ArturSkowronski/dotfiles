@@ -3,7 +3,7 @@ alias show_hidden="defaults write com.apple.Finder AppleShowAllFiles YES && kill
 alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 
 #Vagrant Aliases
-alias osx-conf='subl $OSX_CONFIG'
+alias osx-conf='atom $OSX_CONFIG'
 alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 alias cat='ccat'
 alias jboss_run='~/bin/jboss-eap-6.1/bin/standalone.sh'
@@ -14,7 +14,7 @@ alias proxy-stop='kill `ps -eo pid,command | grep smart-proxy.js | grep -v grep 
 alias proxy-restart='proxy-stop; proxy-run'
 alias proxy-config='subl /opt/proxy/smart-proxy.js'
 
-alias gcb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle clean build'
+alias gcb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle -Dskip.tests clean build'
 
 alias gtb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle --continuous test' #Continous Build
 alias gqb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle build --no-rebuild --parallel --offline --daemon' #Quick Build
@@ -32,9 +32,9 @@ alias @='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 alias docker-kill-all='docker kill $(docker ps -q)'
 alias docker-rm-all='docker rm $(docker ps -a -q)'
-alias dc='docker-compose' 
+alias dc='docker-compose'
 
-alias t='trash' 
+alias t='trash'
 alias jshell='cd ~/Misc/kulla-dev/langtools/repl && bash scripts/run.sh'
 alias gcb-cp='gradle -Dskip.tests clean build && cp -f ~/Projects/candidate-portal/candidate-portal-api/build/libs/candidate-portal-api.war ~/sr-docker/cp0wildfly/deployment/'
 alias gcb-sats='gcb && cp -f ~/Projects/smart-ats/smart-ats-api/build/libs/smart-ats-api.war ~/sr-docker/cp0facade/deployment/'

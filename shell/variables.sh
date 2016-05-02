@@ -2,7 +2,7 @@ export NVM_DIR=~/.nvm
 export SCALAENV_ROOT=/usr/local/var/scalaenv
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export JENV_ROOT=/usr/local/opt/jenv
-export JAVA_HOME=/Library/Java/JavaVirtualMachine/jdk1.8.0_45.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
 export JAVA7_HOME=/usr/local/opt/jenv/versions/1.7
 export JAVA8_HOME=/usr/local/opt/jenv/versions/1.8
 export PRIV=~/Priv
