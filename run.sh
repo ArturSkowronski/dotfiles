@@ -8,6 +8,7 @@ ln -sf `pwd`/shell ~/.shell
 ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
 ln -sf `pwd`/zprezto/prezto ~/.zprezto
+ln -sf `pwd`/atom/packages.cson ~/.atom/packages.cson
 
 source ~/.shell/variables.sh
 
