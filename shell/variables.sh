@@ -8,7 +8,6 @@ export JAVA8_HOME=/usr/local/opt/jenv/versions/1.8
 export PRIV=~/Priv
 export OSX_CONFIG=$PRIV/OSX-Config
 export MOBBE_HOME=$PRIV/Mobbe
-export DOCKER_HOST="tcp://$(boot2docker ip 2>/dev/null):2375"
 export ANDROID_HOME=~/Library/Android/sdk/
 export PATH="$HOME/.rvm/bin:$PATH"
 export PATH="$MOBBE_HOME/mf-server/scripts:$PATH"
