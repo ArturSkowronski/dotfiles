@@ -1,0 +1,35 @@
+[user]
+	name =
+	email = a.skowronski@smartrecruiters.com
+[branch]
+	autosetuprebase = always
+[core]
+	excludesfile = /Users/arturskowronski/.gitignore_global
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Users/arturskowronski/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	switch = !legit switch
+	aliases = config --get-regexp alias
+	branches = !legit branches
+	s = status
+	co = checkout
+	sprout = !legit sprout
+	unpublish = !legit unpublish
+	harvest = !legit harvest
+	sync = !legit sync
+	publish = !legit publish
+	graft = !legit graft
+	resync = !legit resync
+	rwd = !git checkout HEAD~
+	h = !git log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+	hs = !git h --max-count=10
+	fh = !git log --format=format:'%C(bold cyan)%ar %C(reset) %C(green)%f' --name-status
+[push]
+	default = current
+[credential]
+	helper = osxkeychain

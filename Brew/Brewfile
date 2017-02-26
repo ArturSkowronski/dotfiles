@@ -12,6 +12,8 @@ install git-open
 install git-ignore
 install legit
 
+
+
 # Server
 install heroku-toolbelt
 
@@ -21,6 +23,7 @@ install docker
 install zookeeper
 install mesos
 install dock
+install awscli
 
 #ODBC
 install freetds

@@ -16,10 +16,13 @@ export PATH="$HOME/.jenv/bin:$PATH"
 export PATH="$HOME/.spark/bin:$PATH"
 export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 export PATH="/usr/local/opt/go/libexec/bin:$PATH"
-export PATH=$PATH:/usr/local/opt/go/libexec/bin
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$PATH:`yarn global bin`"
 export DEV_ENV_HOST=api1-zotest
 export NODEJS_CONFIG_PATH=/opt/nodejs-apps/config/node-apps-config.json
 export ENVIRONMENT_NAME=DEV
 export GOROOT=~/Priv/Go
 export GOPATH=~/Priv/Go
 export NODEJS_CONFIG_PATH=/opt/node/node-apps-config.json
+export HOMEBREW_CASK_OPTS="--caskroom=/opt/homebrew-cask/Caskroom"

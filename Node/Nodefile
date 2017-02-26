@@ -24,6 +24,8 @@ npm install -g nodemon
 npm install -g express
 npm install -g bower
 npm install -g http-server
+npm install -g tldrlegal
+npm install -g david
 
 #Android
 npm install -g clogcat

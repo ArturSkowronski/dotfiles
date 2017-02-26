@@ -79,8 +79,8 @@ function sit() {
 alias g=sit
 
 function init() {
-    eval "$(scalaenv init -)"
-    eval "$(jenv init -)"
+    # eval "$(scalaenv init -)"
+    # eval "$(jenv init -)"
     export SDKMAN_DIR="/Users/arturskowronski/.sdkman"
     [[ -s "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh"
 }
@@ -105,6 +105,27 @@ if [[ "$SHELL" == *zsh ]]; then
   bindkey "^Wo" :only
   bindkey "^W^O" :only
 fi
+
+nvm() {
+    unset -f nvm
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    nvm "$@"
+}
+ 
+node() {
+    unset -f node
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    node "$@"
+}
+ 
+npm() {
+    unset -f npm
+    export NVM_DIR=~/.nvm
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    npm "$@"
+}
 
 alias docker-machine=docker-srmachine
 alias g=sit
