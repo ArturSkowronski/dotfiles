@@ -1,20 +1,18 @@
+#Load Plugin Framework
 . ~/.shell/init/prezto.sh
 # . ~/.shell/init/antigen.sh
 
-# source "$HOME/.zprezto/init.zsh"
-
-# Customize to your needs...
-
+# Load Environment
 . ~/.shell/variables.sh
 . ~/.shell/functions.sh
 . ~/.shell/aliases.sh
 . ~/.shell/scripts.sh
 
-#. ~/.shell/config/docker-machine.sh
-# taocl
-
+# Initialize Environment
 . ~/.shell/init/prompt.sh
 . ~/.shell/init/iterm.sh
 . ~/.shell/init/sdkman.sh
 # . ~/.shell/init/nvm.sh
+
+# taocl
 
