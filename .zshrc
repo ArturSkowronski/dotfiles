@@ -2,6 +2,8 @@
 . ~/.shell/init/prezto.sh
 # . ~/.shell/init/antigen.sh
 
+set +o noclobber
+
 # Load Environment
 . ~/.shell/variables.sh
 . ~/.shell/functions.sh

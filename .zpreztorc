@@ -36,10 +36,11 @@ zstyle ':prezto:load' pmodule \
 'homebrew' \
 'osx' \
 'ruby' \
-'rails' \
+'node' \
 'git' \
 'syntax-highlighting' \
 'history-substring-search' \
+'autosuggestions' \
 'prompt'
 
 #

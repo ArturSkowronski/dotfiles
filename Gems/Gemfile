@@ -2,3 +2,4 @@ sudo gem install sass
 sudo gem install compass
 sudo gem install git-up
 sudo gem install termit
+sudo gem install tmuxinator

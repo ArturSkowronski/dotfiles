@@ -19,6 +19,18 @@ elif (( ! $+commands[node] )); then
   return 1
 fi
 
+if (( $+commands[nvm] )); then
+  if zstyle -t ':prezto:module:node:nvm' auto-switch; then
+    # Call nvm use automagically when entering a directory containing .nvmrc
+    load-nvmrc() {
+      if [[ -f .nvmrc && -r .nvmrc ]]; then
+        nvm use
+      fi
+    }
+    add-zsh-hook chpwd load-nvmrc
+  fi
+fi
+
 # Load NPM completion.
 if (( $+commands[npm] )); then
   cache_file="${0:h}/cache.zsh"

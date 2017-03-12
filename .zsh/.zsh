@@ -1,1 +1,0 @@
-/Users/arturskowronski/Priv/OSX-Config/.zsh

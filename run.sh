@@ -9,6 +9,11 @@ ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
 ln -sf `pwd`/zprezto/prezto ~/.zprezto
 ln -sf `pwd`/atom/packages.cson ~/.atom/packages.cson
+ln -sf `pwd`/shell/prezto/runcoms/zlogin ~/.zlogin
+ln -sf `pwd`/shell/prezto/runcoms/zlogout ~/.zlogout
+ln -sf `pwd`/shell/prezto/runcoms/zpreztorc ~/.zpreztorc
+ln -sf `pwd`/shell/prezto/runcoms/zprofile ~/.zprofile
+ln -sf `pwd`/shell/prezto/runcoms/zshenv ~/.zshenv
 
 source ~/.shell/variables.sh
 
