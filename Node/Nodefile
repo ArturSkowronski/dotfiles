@@ -1,6 +1,4 @@
 #Build Process
-npm install -g grunt
-npm install -g grunt-cli
 npm install -g gulp
 
 #istanbul-harmony
@@ -22,9 +20,9 @@ npm install -g travis
 npm install -g eslint
 npm install -g nodemon
 npm install -g express
-npm install -g bower
 npm install -g http-server
 npm install -g tldrlegal
+#Node.js module that tells you when your package npm dependencies are out of date. https://david-dm.org
 npm install -g david
 
 #Android

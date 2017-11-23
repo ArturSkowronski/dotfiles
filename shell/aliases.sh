@@ -8,10 +8,7 @@ alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 alias cat='ccat'
 alias jboss_run='~/bin/jboss-eap-6.1/bin/standalone.sh'
 
-alias gcb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle clean build'
-
-alias gtb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle --continuous test' #Continous Build
-alias gqb='export JAVA_HOME=/usr/local/opt/jenv/versions/1.8;gradle build --no-rebuild --parallel --offline --daemon' #Quick Build
+alias gcb='gradle clean build'
 
 alias bci='brew cask install'
 alias bi='brew install'

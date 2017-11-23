@@ -119,3 +119,6 @@ brew install https://raw.githubusercontent.com/icholy/ttygif/master/ttygif.rb
 brew install xmlstarlet
 brew install pstree
 brew install tmux
+
+# https://github.com/hanslub42/rlwrap
+brew install rlwrap
