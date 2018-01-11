@@ -24,19 +24,10 @@ alias docker-rm-all='docker rm $(docker ps -a -q)'
 
 alias t='trash'
 
-alias git='hub'
+# alias git='hub'
 alias npm-init='npm init --yes && npm config set save=true && npm config set save-exact=true'
 
 #Smart Recruiters
 alias proxy-run='(cd /opt/proxy; rm nohup.out ; (nohup node smart-proxy.js &); sleep 2; tail -30 /opt/proxy/nohup.out)'
 alias proxy-stop='kill `ps -eo pid,command | grep smart-proxy.js | grep -v grep | awk '"'"'{print $1}'"'"'`'
-alias proxy-restart='proxy-stop; proxy-run'
-alias proxy-config='subl /opt/proxy/smart-proxy.js'
-
-alias gcb-cp='gradle -Dskip.tests clean build && cp -f ~/Projects/candidate-portal/candidate-portal-api/build/libs/candidate-portal-api.war ~/sr-docker/cp0wildfly/deployment/'
-alias gcb-sats='gcb && cp -f ~/Projects/smart-ats/smart-ats-api/build/libs/smart-ats-api.war ~/sr-docker/cp0facade/deployment/'
-
-alias faf='ssh rman@deploy1-int faf'
-alias fafr='java -jar ~/Projects/fafr/build/libs/fafr-1.22.jar'
-alias faf-go-cert='ssh rman@deploy1-cert faf-go $@'
-alias faf-go-int='ssh rman@deploy1-int faf-go $@'
+alias bastion='ssh artur@52.209.2.114'

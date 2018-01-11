@@ -7,7 +7,7 @@ ln -sf `pwd`/.zsh ~/.zsh
 ln -sf `pwd`/shell ~/.shell
 ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
-ln -sf `pwd`/zprezto/prezto ~/.zprezto
+ln -sf `pwd`/shell/prezto ~/.zprezto
 ln -sf `pwd`/atom/packages.cson ~/.atom/packages.cson
 ln -sf `pwd`/shell/prezto/runcoms/zlogin ~/.zlogin
 ln -sf `pwd`/shell/prezto/runcoms/zlogout ~/.zlogout
