@@ -276,12 +276,19 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>530 486 620 392 0 0 1680 1027 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>268 127 606 469 0 0 1680 1027 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>269 109 796 473 0 0 1680 1028 </string>
+	<string>269 109 918 512 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 575 1680 453 0 0 1680 1028 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>212 101 570 452 0 0 1680 1027 </string>
+	<string>0 575 1680 453 0 0 1680 1027 </string>
 	<key>NeverWarnAboutShortLivedSessions_971460EE-24F3-4E0F-8DF6-0AB0BA88E279</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_971460EE-24F3-4E0F-8DF6-0AB0BA88E279_selection</key>
@@ -518,7 +525,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1584,9 +1591,17 @@
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>AD6042E1-99B7-4D84-ABB0-3FE44531D6D6</string>
+	<string>859CB6A5-A814-4839-81BA-7F133E49D545</string>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>537390794.22871399</real>
+	<real>548520978.867149</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
+	<key>OpenArrangementAtStartup</key>
+	<false/>
+	<key>OpenNoWindowsAtStartup</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1622,16 +1637,18 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/arturskowronski/Priv/dotfiles/Terminal</string>
+	<key>PromptOnQuit</key>
+	<false/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=55</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=78</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-01-20T01:05:40Z</date>
+	<date>2018-08-10T19:34:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>StatusBarIcon</key>
@@ -1639,6 +1656,6 @@
 	<key>WordCharacters</key>
 	<string>`</string>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.7</string>
 </dict>
 </plist>

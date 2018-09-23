@@ -4,7 +4,7 @@ alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killa
 
 alias osx-conf='subl $OSX_CONFIG'
 alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
-alias cat='ccat'
+alias cat='bat'
 
 alias gcb='gradle clean build'
 
@@ -27,3 +27,4 @@ alias bastion='ssh artur@52.209.2.114'
 
 alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 alias setJdk9='export JAVA_HOME=$(/usr/libexec/java_home -v 1.9)'
+alias ping='prettyping --nolegend'

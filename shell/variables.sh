@@ -1,8 +1,7 @@
 export NVM_DIR=~/.nvm
 export SCALAENV_ROOT=/usr/local/var/scalaenv
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export JENV_ROOT=/usr/local/opt/jenv
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
 export JAVA7_HOME=/usr/local/opt/jenv/versions/1.7
 export JAVA8_HOME=/usr/local/opt/jenv/versions/1.8
 export PRIV=~/Priv
@@ -13,9 +12,11 @@ export ANDROID_HOME=~/Library/Android/sdk/
 # export PATH="$HOME/.rvm/bin:$PATH"
 # export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
 # export PATH="/usr/local/opt/go/libexec/bin:$PATH"
-# export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 # export PATH="/usr/local/bin:$PATH"
 # export PATH="/Users/arturskowronski/.nvm/versions/node/v6.9.0/bin:$PATH"
+export PATH=/usr/local/share/python:$PATH
+
 # export NODEJS_CONFIG_PATH=/opt/nodejs-apps/config/node-apps-config.json
 export ENVIRONMENT_NAME=DEV
 export GOROOT=~/Priv/Go
