@@ -28,3 +28,4 @@ alias bastion='ssh artur@52.209.2.114'
 alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 alias setJdk9='export JAVA_HOME=$(/usr/libexec/java_home -v 1.9)'
 alias ping='prettyping --nolegend'
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
