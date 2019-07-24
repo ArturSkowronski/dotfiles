@@ -11,14 +11,10 @@ set +o noclobber
 . ~/.shell/scripts.sh
 
 # Initialize Environment
-. ~/.shell/init/prompt.sh
-. ~/.shell/init/iterm.sh
-. ~/.shell/init/sdkman.sh
-. ~/.shell/init/nvm.sh
+ . ~/.shell/init/prompt.sh
+ . ~/.shell/init/iterm.sh
+ . ~/.shell/init/sdkman.sh
+ . ~/.shell/init/nvm.sh
 
 # taocl
 
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/arturskowronski/.sdkman"
-[[ -s "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh"
