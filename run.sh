@@ -6,11 +6,11 @@ chsh -s /bin/zsh
 ln -sf `pwd`/shell ~/.shell
 ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
+ln -sf `pwd`/.gitignore_global ~/.gitignore_global
 ln -sf `pwd`/shell/prezto ~/.zprezto
 ln -sf `pwd`/atom/packages.cson ~/.atom/packages.cson
 ln -sf `pwd`/shell/prezto/runcoms/zlogin ~/.zlogin
 ln -sf `pwd`/shell/prezto/runcoms/zlogout ~/.zlogout
-ln -sf `pwd`/shell/prezto/runcoms/zpreztorc ~/.zpreztorc
 ln -sf `pwd`/shell/prezto/runcoms/zprofile ~/.zprofile
 ln -sf `pwd`/shell/prezto/runcoms/zshenv ~/.zshenv
 
@@ -37,6 +37,10 @@ source /Users/arturskowronski/.rvm/scripts/rvm
 
 defaults write com.apple.finder AppleShowAllFiles YES
 killall Finder /System/Library/CoreServices/Finder.app
+
+git config --global core.excludesfile '~/.gitignore'
+git config --global user.name "Artur Skowronski"
+git config --global user.email "me@arturskowronski.com"
 
 # echo "  Easter Egg seals are happy                                           ";
 # echo "          (\/ )        _  _         ( \/)                              ";

@@ -20,7 +20,10 @@ alias docker-rm-all='docker rm $(docker ps -a -q)'
 alias t='trash'
 alias cal='ncal'
 
-# alias git='hub'
 alias npm-init='npm init --yes && npm config set save=true && npm config set save-exact=true'
 
 alias flushdns='sudo networksetup -setnetworkserviceenabled Wi-Fi off ; sudo route flush ; sudo route flush ; sudo networksetup -setnetworkserviceenabled Wi-Fi on'
+
+alias ping='prettyping --nolegend'
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+

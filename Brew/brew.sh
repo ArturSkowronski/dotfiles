@@ -43,6 +43,11 @@ brew tap bramstein/webfonttools
 brew install sfnt2woff
 brew install sfnt2woff-zopfli
 brew install woff2
+brew install fd
+brew install bat
+brew install htop
+brew install ncdu
+brew install diff-so-fancy
 
 # Install some CTF tools; see https://github.com/ctfs/write-ups.
 # brew install aircrack-ng
@@ -97,7 +102,6 @@ brew install typesafe-activator
 brew install sbt
 
 #Shell
-brew install ccat
 brew install thefuck
 brew install jq
 
