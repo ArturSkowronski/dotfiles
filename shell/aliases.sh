@@ -27,3 +27,4 @@ alias flushdns='sudo networksetup -setnetworkserviceenabled Wi-Fi off ; sudo rou
 alias ping='prettyping --nolegend'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
+alias grammarly="open -a Grammarly"
