@@ -28,13 +28,9 @@ brew cask install --appdir="/Applications" robomongo
 brew cask install --appdir="/Applications" flux	      
 brew cask install --appdir="/Applications" retinizer	
 brew cask install --appdir="/Applications" teamviewer	      
-brew cask install --appdir="/Applications" karabiner	        
 brew cask install --appdir="/Applications" todoist  
 brew cask install --appdir="/Applications" simple-comic	
 brew cask install --appdir="/Applications" steam	
-brew cask install --appdir="/Applications" utorrent
-brew cask install --appdir="/Applications" unified-remote
-brew cask install --appdir="/Applications" unrarx
 brew cask install --appdir="/Applications" calibre	    
 brew cask install --appdir="/Applications" cheatsheet
 

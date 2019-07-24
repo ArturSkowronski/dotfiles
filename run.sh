@@ -3,7 +3,6 @@ NODE_VERSION=5
 mkdir -p ~/Priv/
 chsh -s /bin/zsh
 
-ln -sf `pwd`/.zsh ~/.zsh
 ln -sf `pwd`/shell ~/.shell
 ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
