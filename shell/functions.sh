@@ -54,6 +54,22 @@ function taocl() {
   printf '%20s\n' | tr ' ' -
 }
 
+function code-maat () {
+  git log --pretty=format:'[%h] %aN %ad %s' --date=short --numstat >> logfile.log
+  mv logfile.log ~/Priv/code-maat
+  pushd ~/Priv/code-maat
+    DIR_NAME=$(date '+%Y-%m-%d.%H.%M.%S')
+    mkdir -p "reports/$DIR_NAME"
+    mv logfile.log "reports/$DIR_NAME/"
+    lein run -l "reports/$DIR_NAME/logfile.log" -c git -a summary >> "reports/$DIR_NAME/summary.log"
+    lein run -l "reports/$DIR_NAME/logfile.log" -c git -a coupling >> "reports/$DIR_NAME/coupling.log"
+    lein run -l "reports/$DIR_NAME/logfile.log" -c git -a age >> "reports/$DIR_NAME/age.log"
+    rm "reports/$DIR_NAME/logfile.log"
+    subl "reports/$DIR_NAME" 
+  popd
+}
+
+
 :only() {
   PROG='!'"/^$$|ack/&&/$(basename $SHELL)"'$/{print$2}'
   ps -ao pid,ppid,comm= | awk "$PROG" | xargs kill
