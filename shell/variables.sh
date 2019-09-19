@@ -16,3 +16,4 @@ export PATH="/usr/local/bin:$PATH"
 export ENVIRONMENT_NAME=DEV
 export GOROOT=~/Priv/Go
 export GOPATH=/Users/arturskowronski/Priv/ledger
+export GRADLE_USER_HOME=/Users/arturskowronski/.gradle
