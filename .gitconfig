@@ -30,6 +30,7 @@
 
 [core]
 	excludesfile = /Users/arturskowronski/.gitignore_global
+	autocrlf = input
 [user]
 	email = me@arturskowronski.com
 	name = Artur Skowronski

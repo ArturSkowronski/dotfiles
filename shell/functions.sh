@@ -62,6 +62,7 @@ function code-maat () {
     mkdir -p "reports/$DIR_NAME"
     mv logfile.log "reports/$DIR_NAME/"
     lein run -l "reports/$DIR_NAME/logfile.log" -c git -a summary >> "reports/$DIR_NAME/summary.log"
+    lein run -l "reports/$DIR_NAME/logfile.log" -c git >> "reports/$DIR_NAME/data.log"
     lein run -l "reports/$DIR_NAME/logfile.log" -c git -a coupling >> "reports/$DIR_NAME/coupling.log"
     lein run -l "reports/$DIR_NAME/logfile.log" -c git -a age >> "reports/$DIR_NAME/age.log"
     rm "reports/$DIR_NAME/logfile.log"
