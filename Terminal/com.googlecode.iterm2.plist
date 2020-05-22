@@ -259,6 +259,11 @@
 	<false/>
 	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns v2 KeyBingingTable</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -296,7 +301,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>2217 482 796 486 1680 330 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1680 1944 2560 429 1680 527 2560 1417 </string>
+	<string>0 1027 1680 453 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 41 1680 986 0 0 1680 1027 </string>
 	<key>New Bookmarks</key>
@@ -1602,16 +1607,16 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{1680, 527}, {2560, 1440}}</string>
+		<string>{{0, 0}, {1680, 1050}}</string>
 		<key>topLeft</key>
-		<string>{2638, 1642}</string>
+		<string>{269, 595}</string>
 	</dict>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>859CB6A5-A814-4839-81BA-7F133E49D545</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>3</integer>
+	<integer>9</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>596903608.77335799</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
@@ -2344,6 +2349,8 @@
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>548520978.867149</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2394,7 +2401,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-06T07:30:24Z</date>
+	<date>2020-05-22T20:18:46Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
