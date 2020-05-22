@@ -1,3 +1,4 @@
+zmodload zsh/zprof
 #Load Plugin Framework
 . ~/.shell/init/prezto.sh
 # . ~/.shell/init/antigen.sh
@@ -14,8 +15,5 @@ set +o noclobber
  . ~/.shell/init/prompt.sh
  . ~/.shell/init/iterm.sh
  . ~/.shell/init/sdkman.sh
- . ~/.shell/init/nvm.sh
 
 # taocl
-
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
