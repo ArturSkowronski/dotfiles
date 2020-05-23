@@ -1,7 +1,7 @@
 alias show_hidden="defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder"
 alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 
-alias osx-conf='code $OSX_CONFIG'
+alias osx-conf='subl $OSX_CONFIG'
 alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 alias cat='ccat'
 
@@ -31,7 +31,5 @@ alias grammarly="open -a Grammarly"
 
 
 # TESCO
-alias run_environment="$TLS_HOME/environment.sh"
-alias run_integration_tests="$TLS_HOME/app/test/run_integration_tests.sh -l"
-alias vived-prod-tunnel='ssh ec2-user@ec2-52-212-139-137.eu-west-1.compute.amazonaws.com -L 27018:127.0.0.1:27017'
-alias vived-preprod-tunnel='ssh -i "$VIVED_HOME/aws-micro-mongo-ppe.pem" ec2-user@ec2-34-241-155-148.eu-west-1.compute.amazonaws.com -L 27019:127.0.0.1:27017'
+alias run_environment="~/Projects/tescolocationservice/environment.sh"
+alias run_integration_tests="/Users/arturskowronski/Projects/tescolocationservice/app/test/run_integration_tests.sh -l"

@@ -17,5 +17,5 @@ export ENVIRONMENT_NAME=DEV
 export GOROOT=~/Priv/Go
 export GOPATH=/Users/arturskowronski/Priv/ledger
 export GRADLE_USER_HOME=/Users/arturskowronski/.gradle
-export TLS_HOME="$PROJECTS/tescolocationservice"
-export VIVED_HOME="$PROJECTS/vived"
+export TLS="$PROJECTS/tescolocationservice"
+export TLS="$PROJECTS/tescolocationservice"
