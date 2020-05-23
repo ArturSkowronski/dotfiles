@@ -28,3 +28,8 @@ alias ping='prettyping --nolegend'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 alias grammarly="open -a Grammarly"
+
+
+# TESCO
+alias run_environment="~/Projects/tescolocationservice/environment.sh"
+alias run_integration_tests="/Users/arturskowronski/Projects/tescolocationservice/app/test/run_integration_tests.sh -l"
