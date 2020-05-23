@@ -6,7 +6,7 @@ chsh -s /bin/zsh
 ln -sf `pwd`/shell ~/.shell
 ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
-ln -sf `pwd`/.gitignore_global ~/.gitignore_global
+ln -sf `pwd`/.gitignore ~/.gitignore_global
 ln -sf `pwd`/shell/prezto ~/.zprezto
 ln -sf `pwd`/atom/packages.cson ~/.atom/packages.cson
 ln -sf `pwd`/shell/prezto/runcoms/zlogin ~/.zlogin
