@@ -28,10 +28,12 @@ alias ping='prettyping --nolegend'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 alias grammarly="open -a Grammarly"
-
+alias moment-guess="npx moment-guess --date "
 
 # TESCO
 alias run_environment="$TLS_HOME/environment.sh"
+alias production_restore_local_mongo="$TLS_HOME/environment/mongo/restore-local-mongo-from-dump.sh"
+alias ppe_restore_local_mongo="$TLS_HOME/environment/mongo/restore-local-mongo-from-dump.sh --preprod"
 alias run_integration_tests="$TLS_HOME/app/test/run_integration_tests.sh -l"
 alias vived-prod-tunnel='ssh ec2-user@ec2-52-212-139-137.eu-west-1.compute.amazonaws.com -L 27018:127.0.0.1:27017'
 alias vived-preprod-tunnel='ssh -i "$VIVED_HOME/aws-micro-mongo-ppe.pem" ec2-user@ec2-34-241-155-148.eu-west-1.compute.amazonaws.com -L 27019:127.0.0.1:27017'
