@@ -29,6 +29,7 @@ alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
 
 alias grammarly="open -a Grammarly"
 alias moment-guess="npx moment-guess --date "
+alias tldr="npx tldr"
 
 # TESCO
 alias run_environment="$TLS_HOME/environment.sh"
