@@ -20,6 +20,4 @@ export GRADLE_USER_HOME=/Users/arturskowronski/.gradle
 export TLS_HOME="$PROJECTS/tescolocationservice"
 export VIVED_HOME="$PROJECTS/vived"
 export KEYCLOAK_CLIENT_ID="snapshot-access-script"
-export KEYCLOAK_CLIENT_SECRET="c4842671-6299-4fa2-acb8-da9598626fbb"
-export KEYCLOAK_CLIENT_USERNAME="clickstream@vived.io"
-export KEYCLOAK_CLIENT_PASSWORD="bevfKfYgYQ5K"
+export KEYCLOAK_CLIENT_USERNAME="SET ME UP"
