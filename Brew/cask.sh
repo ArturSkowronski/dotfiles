@@ -13,7 +13,7 @@ brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
+brew cask install google-chrome
 brew cask install --appdir="/Applications" firefox
 
 brew cask install --appdir="/Applications" slack

@@ -6,9 +6,8 @@ chsh -s /bin/zsh
 ln -sf `pwd`/shell ~/.shell
 ln -sf `pwd`/.zshrc ~/.zshrc
 ln -sf `pwd`/.zpreztorc ~/.zpreztorc
-ln -sf `pwd`/.gitignore ~/.gitignore_global
+ln -sf `pwd`/.gitignore_global ~/.gitignore
 ln -sf `pwd`/shell/prezto ~/.zprezto
-ln -sf `pwd`/atom/packages.cson ~/.atom/packages.cson
 ln -sf `pwd`/shell/prezto/runcoms/zlogin ~/.zlogin
 ln -sf `pwd`/shell/prezto/runcoms/zlogout ~/.zlogout
 ln -sf `pwd`/shell/prezto/runcoms/zprofile ~/.zprofile
@@ -17,23 +16,20 @@ ln -sf `pwd`/shell/prezto/runcoms/zshenv ~/.zshenv
 source ~/.shell/variables.sh
 
 #Installing Brew and Application
-./apps/bootstrap.sh
+# ./apps/bootstrap.sh
 
 #Installing Stable Node
-n stable
-./apps/bootstrap.sh
+# n stable
+# ./apps/bootstrap.sh
 
 #Installing GVM & Gradle
 curl -s get.sdkman.io | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 
-legit install
+#legit install
 
 dscacheutil -flushcache
-
-curl -sSL https://get.rvm.io | bash
-source /Users/arturskowronski/.rvm/scripts/rvm
 
 defaults write com.apple.finder AppleShowAllFiles YES
 killall Finder /System/Library/CoreServices/Finder.app
