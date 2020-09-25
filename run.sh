@@ -37,6 +37,7 @@ killall Finder /System/Library/CoreServices/Finder.app
 git config --global core.excludesfile '~/.gitignore'
 git config --global user.name "Artur Skowronski"
 git config --global user.email "me@arturskowronski.com"
+git config --global core.pager "npx diff-so-fancy | less --tabs=4 -RFX"
 
 defaults write com.apple.Dock showhidden -bool YES && killall Dock
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
