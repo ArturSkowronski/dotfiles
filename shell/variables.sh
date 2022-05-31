@@ -18,3 +18,6 @@ export GOROOT=~/Priv/Go
 export GOPATH=/Users/arturskowronski/Priv/ledger
 export TLS_HOME="$PROJECTS/tescolocationservice"
 export VIVED_HOME="$PROJECTS/vived"
+export JIRA_API_TOKEN="mCr1OECPrmd6r80wDEsD4C66"
+
+
