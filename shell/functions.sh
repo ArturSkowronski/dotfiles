@@ -66,8 +66,8 @@ function setjdk() {
 function init() {
     # eval "$(scalaenv init -)"
     # eval "$(jenv init -)"
-    export SDKMAN_DIR="/Users/arturskowronski/.sdkman"
-    [[ -s "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh"
+    export SDKMAN_DIR="/Users/askowronski/.sdkman"
+    [[ -s "/Users/askowronski/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh"
 }
 
 free-port() { kill "$(lsof -t -i :$1)"; }
@@ -75,7 +75,7 @@ kill-port() { kill -kill "$(lsof -t -i :$1)"; }
 
 function taocl() {
   printf '%20s\n' | tr ' ' -
-  cat /Users/arturskowronski/Misc/taocl |
+  cat /Users/askowronski/Misc/taocl |
   pandoc -f markdown -t html |
   xmlstarlet fo --html --dropdtd |
   xmlstarlet sel -t -v "(html/body/ul/li[count(p)>0])[$RANDOM mod last()+1]" |

@@ -23,14 +23,14 @@ brew tap homebrew/boneyard
 brew install wget --with-iri
 
 # Install Python
-brew install python
+# brew install python
 brew install python3
 
 # Install ruby-build and rbenv
-brew install ruby-build
-brew install rbenv
-LINE='eval "$(rbenv init -)"'
-grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
+# brew install ruby-build
+# brew install rbenv
+# LINE='eval "$(rbenv init -)"'
+# grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
@@ -106,16 +106,16 @@ brew install thefuck
 brew install jq
 
 #Clojure
-brew install leiningen
+# brew install leiningen
 
 #DB
-brew install postgresql
-brew install mongodb
-brew install pgcli
+# brew install postgresql
+# brew install mongodb
+# brew install pgcli
 
 #Tools
 brew install highlight
-brew install s3cmd
+# brew install s3cmd
 brew install ttyrec
 brew install ffmpeg
 brew install https://raw.githubusercontent.com/icholy/ttygif/master/ttygif.rb

@@ -29,7 +29,7 @@
   merge = refs/heads/master
 
 [core]
-	excludesfile = /Users/arturskowronski/.gitignore_global
+	excludesfile = /Users/askowronski/.gitignore_global
 	autocrlf = input
 [user]
 	email = me@arturskowronski.com
