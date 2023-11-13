@@ -126,3 +126,6 @@ brew install tmux
 
 # https://github.com/hanslub42/rlwrap
 brew install rlwrap
+
+brew tap homebrew/cask-fonts
+brew install font-monaspace
