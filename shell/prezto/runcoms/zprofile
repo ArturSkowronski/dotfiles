@@ -73,3 +73,4 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+alias podman-sock="rm -f /tmp/podman.sock && ssh -i ~/.ssh/podman-machine-default -p $(podman system connection list --format=json | jq '.[0].URI' | sed -E 's|.+://.+@.+:([[:digit:]]+)/.+|\1|') -L'/tmp/podman.sock:/run/user/1000/podman/podman.sock' -N core@localhost"

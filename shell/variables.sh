@@ -1,7 +1,8 @@
 export NVM_DIR=~/.nvm
 export SCALAENV_ROOT=/usr/local/var/scalaenv
 export JENV_ROOT=/usr/local/opt/jenv
-# export JAVA_HOME=/Users/askowronski/Library/Java/JavaVirtualMachines/openjdk-18.0.1.1/Contents/Home
+export JAVA_HOME=/Users/askowronski/Library/Java/JavaVirtualMachines/azul-20.0.2/Contents/Home
+# export GRAALVM_HOME=/Users/askowronski/Library/Java/JavaVirtualMachines/graalvm-ce-22.0.0/Contents/Home
 export PRIV=~/Priv
 export PROJECTS=~/Projects
 export OSX_CONFIG=$PRIV/dotfiles
@@ -16,4 +17,3 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/Users/askowronski/.local/bin:$PATH"
 export ENVIRONMENT_NAME=DEV
 export GOPATH=/Users/askowronski/Projects/go
-export VIVED_HOME="$PROJECTS/vived"

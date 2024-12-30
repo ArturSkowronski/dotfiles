@@ -21,14 +21,14 @@ alias cat='ccat'
 alias cal='ncal'
 alias ping='prettyping --nolegend'
 alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
-alias du="duf"
+# alias du="duf"
 alias tldr="npx tldr"
 alias tar="dtrx"
-alias ls="exa"
 alias less="most"
 alias top="bpytop"
 alias python="python3"
 alias pip="pip3"
+alias docker="podman"
 
 alias npm-init='npm init --yes && npm config set save=true && npm config set save-exact=true'
 alias flushdns='sudo networksetup -setnetworkserviceenabled Wi-Fi off ; sudo route flush ; sudo route flush ; sudo networksetup -setnetworkserviceenabled Wi-Fi on'
@@ -41,4 +41,3 @@ alias vived-prod-psql-tunnel='ssh ec2-user@34.251.89.167 -L 27028:vived-prod-bac
 alias replica-vived-prod-psql-tunnel='ssh ec2-user@34.251.89.167 -L 27028:vived-prod-backend-postgres-read-replica.ckwlbltrxdew.eu-west-1.rds.amazonaws.com:5432'
 
 alias sherlock='python3 $HOME/bin/sherlock/sherlock'
-alias docker=podman
