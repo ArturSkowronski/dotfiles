@@ -2,9 +2,8 @@ alias show_hidden="defaults write com.apple.Finder AppleShowAllFiles YES && kill
 alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder"
 
 alias osx-conf='code $OSX_CONFIG'
-alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 
-alias gcb='gradle clean build'
+alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 
 alias bci='brew install --cask'
 alias bi='brew install'
@@ -29,10 +28,6 @@ alias top="bpytop"
 alias python="python3"
 alias pip="pip3"
 
-alias npm-init='npm init --yes && npm config set save=true && npm config set save-exact=true'
-alias flushdns='sudo networksetup -setnetworkserviceenabled Wi-Fi off ; sudo route flush ; sudo route flush ; sudo networksetup -setnetworkserviceenabled Wi-Fi on'
-
-alias grammarly="open -a Grammarly"
 alias moment-guess="npx moment-guess --date "
 
 # Vived

@@ -1,20 +1,16 @@
-export NVM_DIR=~/.nvm
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+export PRIV="$HOME/Priv"
+export PROJECTS="$HOME/Projects"
+export OSX_CONFIG="$PRIV/dotfiles"
+
 export SCALAENV_ROOT=/usr/local/var/scalaenv
 export JENV_ROOT=/usr/local/opt/jenv
-export JAVA_HOME=/Users/askowronski/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home
-export GRAALVM_HOME=/Users/askowronski/Library/Java/JavaVirtualMachines/graalvm-ce-22.0.0/Contents/Home
-export PRIV=~/Priv
-export PROJECTS=~/Projects
-export OSX_CONFIG=$PRIV/dotfiles
-export ANDROID_HOME=~/Library/Android/sdk/
-# export PATH="$PATH:`yarn global bin`"
-# export PATH="$HOME/.rvm/bin:$PATH"
-# export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-# export PATH="/usr/local/opt/go/libexec/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-# export PATH="/usr/local/bin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="/Users/askowronski/.local/bin:$PATH"
-export ENVIRONMENT_NAME=DEV
-export GOPATH=/Users/askowronski/Projects/go
-export IMGUR_CLIENT_ID=0cf32e4e6728211
+export NVM_DIR="$HOME/.nvm"
+export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/corretto-21.0.4/Contents/Home"
+export GRAALVM_HOME="$HOME/Library/Java/JavaVirtualMachines/graalvm-ce-22.0.0/Contents/Home"
+
+export ANDROID_HOME="$HOME/Library/Android/sdk/"
+export GOPATH="$HOME/Projects/go"
