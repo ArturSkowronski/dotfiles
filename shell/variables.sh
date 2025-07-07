@@ -18,4 +18,3 @@ export PATH="/Users/askowronski/.local/bin:$PATH"
 export ENVIRONMENT_NAME=DEV
 export GOPATH=/Users/askowronski/Projects/go
 export IMGUR_CLIENT_ID=0cf32e4e6728211
-export GEMINI_API_KEY=AIzaSyCmEMCDz3NDLvX7hXOF9-5Z1awSRGvmOXE 
