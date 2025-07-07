@@ -59,13 +59,16 @@ esac
 . ~/.shell/lazy-nvm.sh
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/askowronski/.docker/completions $fpath)
-# Optimized compinit - only run if completions are older than 24 hours
+# Async compinit for much faster startup
 autoload -Uz compinit
-if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
-  compinit
-else
-  compinit -C
-fi
+# Run compinit in background to avoid blocking shell startup
+{
+  if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+    compinit
+  else
+    compinit -C
+  fi
+} &!
 # End of Docker CLI completions
 
 # Add Docker CLI to PATH
