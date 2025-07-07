@@ -46,3 +46,30 @@ eval "$(pyenv init -)"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+. "$HOME/Projects/TornadoVM/setvars.sh"
+# pnpm
+export PNPM_HOME="/Users/askowronski/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Lazy load NVM for faster startup
+. ~/.shell/lazy-nvm.sh
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/askowronski/.docker/completions $fpath)
+# Optimized compinit - only run if completions are older than 24 hours
+autoload -Uz compinit
+if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
+# End of Docker CLI completions
+
+# Add Docker CLI to PATH
+export PATH=$PATH:/Applications/Docker.app/Contents/Resources/bin
+
+# opencode
+export PATH=/Users/askowronski/.opencode/bin:$PATH

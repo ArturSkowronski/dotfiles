@@ -28,7 +28,6 @@ alias less="most"
 alias top="bpytop"
 alias python="python3"
 alias pip="pip3"
-alias docker="podman"
 
 alias npm-init='npm init --yes && npm config set save=true && npm config set save-exact=true'
 alias flushdns='sudo networksetup -setnetworkserviceenabled Wi-Fi off ; sudo route flush ; sudo route flush ; sudo networksetup -setnetworkserviceenabled Wi-Fi on'
