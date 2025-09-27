@@ -1,1 +1,1 @@
-. "$OSX_CONFIG"/shell/scripts/z.sh
+. "$DOTFILES"/shell/scripts/z.sh
