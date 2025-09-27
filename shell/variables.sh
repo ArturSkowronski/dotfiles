@@ -1,6 +1,7 @@
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 export PRIV="$HOME/Priv"
 export PROJECTS="$HOME/Projects"

@@ -64,8 +64,8 @@ alias transfer=transfer
 function init() {
     # eval "$(scalaenv init -)"
     # eval "$(jenv init -)"
-    export SDKMAN_DIR="/Users/askowronski/.sdkman"
-    [[ -s "/Users/askowronski/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/arturskowronski/.sdkman/bin/sdkman-init.sh"
+    export SDKMAN_DIR="$HOME/.sdkman"
+    [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 }
 
 free-port() { kill "$(lsof -t -i :$1)"; }
@@ -73,7 +73,7 @@ kill-port() { kill -kill "$(lsof -t -i :$1)"; }
 
 function taocl() {
   printf '%20s\n' | tr ' ' -
-  cat /Users/askowronski/Misc/taocl |
+  cat $HOME/Misc/taocl |
   pandoc -f markdown -t html |
   xmlstarlet fo --html --dropdtd |
   xmlstarlet sel -t -v "(html/body/ul/li[count(p)>0])[$RANDOM mod last()+1]" |
@@ -83,8 +83,8 @@ function taocl() {
 
 function code-maat () {
   git log --pretty=format:'[%h] %aN %ad %s' --date=short --numstat >> logfile.log
-  mv logfile.log ~/Priv/code-maat
-  pushd ~/Priv/code-maat
+  mv logfile.log $PRIV/code-maat
+  pushd $PRIV/code-maat
     DIR_NAME=$(date '+%Y-%m-%d.%H.%M.%S')
     mkdir -p "reports/$DIR_NAME"
     mv logfile.log "reports/$DIR_NAME/"
@@ -93,7 +93,7 @@ function code-maat () {
     lein run -l "reports/$DIR_NAME/logfile.log" -c git -a coupling >> "reports/$DIR_NAME/coupling.log"
     lein run -l "reports/$DIR_NAME/logfile.log" -c git -a age >> "reports/$DIR_NAME/age.log"
     rm "reports/$DIR_NAME/logfile.log"
-    subl "reports/$DIR_NAME" 
+    subl "reports/$DIR_NAME"
   popd
 }
 
@@ -108,24 +108,3 @@ if [[ "$SHELL" == *zsh ]]; then
   bindkey "^Wo" :only
   bindkey "^W^O" :only
 fi
-
-# nvm() {
-#     unset -f nvm
-#     export NVM_DIR=~/.nvm
-#     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-#     nvm "$@"
-# }
- 
-# node() {
-#     unset -f node
-#     export NVM_DIR=~/.nvm
-#     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-#     node "$@"
-# }
- 
-# npm() {
-#     unset -f npm
-#     export NVM_DIR=~/.nvm
-#     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-#     npm "$@"
-# }
