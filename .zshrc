@@ -17,7 +17,6 @@ set +o noclobber
 . ~/.shell/init/prompt.sh
 . ~/.shell/init/iterm.sh
 . ~/.shell/init/fnm.sh
-. ~/.shell/init/pnpm.sh
 . ~/.shell/init/sdkman.sh
 . ~/.shell/init/gcloud.sh
 . ~/.shell/init/pyenv.sh

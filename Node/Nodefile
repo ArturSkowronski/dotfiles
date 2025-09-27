@@ -1,37 +1,17 @@
-#Build Process
+# Modern Build & Development Tools
 npm install -g gulp
 
-#istanbul-harmony
-#istanbul-traceur
-
-#Tests
+# Testing Frameworks
 npm install -g karma
-npm install -g karma-coverage
 npm install -g mocha
-npm install -g mocha-traceur
+npm install -g nyc  # Code coverage
 
-#ES6
-npm install -g babel
-npm install -g regenerator
-npm install -g traceur
-
-#Tools
-npm install -g travis
+# Development Tools
 npm install -g eslint
 npm install -g nodemon
-npm install -g express
 npm install -g http-server
-npm install -g tldrlegal
-#Node.js module that tells you when your package npm dependencies are out of date. https://david-dm.org
-npm install -g david
 
-#Android
-npm install -g clogcat
-
-#Yo
+# Project Generators (modern/active ones)
 npm install -g yo
-npm install -g generator-flux-webapp
 npm install -g generator-jhipster
-npm install -g generator-node-gulp
 npm install -g generator-reveal
-npm install -g generator-rise
