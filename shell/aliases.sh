@@ -13,6 +13,7 @@ alias bi='brew install'
 alias @='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 command -v trash >/dev/null 2>&1 && alias t='trash' || echo "Warning: trash not found"
+command -v podman >/dev/null 2>&1 && alias docker='podman' || echo "Warning: podman not found"
 command -v ccat >/dev/null 2>&1 && alias cat='ccat' || echo "Warning: ccat not found"
 command -v ncal >/dev/null 2>&1 && alias cal='ncal' || echo "Warning: ncal not found"
 command -v prettyping >/dev/null 2>&1 && alias ping='prettyping --nolegend' || echo "Warning: prettyping not found"
