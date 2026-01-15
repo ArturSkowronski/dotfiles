@@ -22,3 +22,8 @@ set +o noclobber
 . ~/.shell/init/pyenv.sh
 . ~/.shell/init/kiro.sh
 . ~/.shell/init/tornadovm.sh
+
+# Added by Antigravity
+export PATH="/Users/askowronski/.antigravity/antigravity/bin:$PATH"
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
