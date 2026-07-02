@@ -12,11 +12,6 @@ alias bci='brew install --cask'
 alias bi='brew install'
 
 command -v trash >/dev/null 2>&1 && alias t='trash' || echo "Warning: trash not found"
-if ! command -v docker >/dev/null 2>&1 && command -v podman >/dev/null 2>&1; then
-  alias docker='podman'
-elif ! command -v docker >/dev/null 2>&1; then
-  echo "Warning: docker and podman not found"
-fi
 command -v ccat >/dev/null 2>&1 && alias cat='ccat' || echo "Warning: ccat not found"
 command -v ncal >/dev/null 2>&1 && alias cal='ncal' || echo "Warning: ncal not found"
 command -v prettyping >/dev/null 2>&1 && alias ping='prettyping --nolegend' || echo "Warning: prettyping not found"
