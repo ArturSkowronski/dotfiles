@@ -1,15 +1,22 @@
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# SDKMAN: JAVA_HOME and candidate bins set statically via stable `current`
+# symlinks (instant); sdkman-init.sh loads lazily on the first `sdk` call.
 export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh" > /dev/null 2>&1
+export JAVA_HOME="$SDKMAN_DIR/candidates/java/current"
+for _c in "$SDKMAN_DIR"/candidates/*/current/bin(N); do
+  export PATH="$_c:$PATH"
+done
+unset _c
 
-# Fix for SDKMAN auto-env hook issue
-sdkman_auto_env() {
-    if [[ -f ".sdkmanrc" ]]; then
-          sdk env
-    fi
+sdk() {
+  unset -f sdk
+  [[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ]] && source "$SDKMAN_DIR/bin/sdkman-init.sh" > /dev/null 2>&1
+  sdk "$@"
 }
 
-# # Add to chpwd (directory change) hook for auto-env
+# Auto `sdk env` when entering a directory with .sdkmanrc (loads SDKMAN on demand)
+sdkman_auto_env() {
+  [[ -f ".sdkmanrc" ]] && sdk env
+}
 autoload -Uz add-zsh-hook
 add-zsh-hook chpwd sdkman_auto_env
 
