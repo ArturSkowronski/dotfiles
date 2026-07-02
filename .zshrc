@@ -1,7 +1,5 @@
-zmodload zsh/zprof
 #Load Plugin Framework
 . ~/.shell/init/prezto.sh
-. ~/.shell/scripts/lazy-compinit.sh
 . ~/.shell/init/fzf.sh
 
 set +o noclobber
@@ -10,20 +8,19 @@ set +o noclobber
 . ~/.shell/variables.sh
 . ~/.shell/functions.sh
 . ~/.shell/aliases.sh
-. ~/.shell/scripts.sh
 . ~/.secrets.sh
 
 # Initialize Environment
-. ~/.shell/init/prompt.sh
 . ~/.shell/init/iterm.sh
 . ~/.shell/init/fnm.sh
 . ~/.shell/init/sdkman.sh
-. ~/.shell/init/gcloud.sh
 . ~/.shell/init/pyenv.sh
 . ~/.shell/init/kiro.sh
-. ~/.shell/init/tornadovm.sh
+. ~/.shell/init/tmux.sh
 
 # Added by Antigravity
-export PATH="/Users/askowronski/.antigravity/antigravity/bin:$PATH"
+export PATH="$HOME/.antigravity/antigravity/bin:$PATH"
 
 if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
+# peon-ping quick controls
+alias peon="bash ~/.claude/hooks/peon-ping/peon.sh"

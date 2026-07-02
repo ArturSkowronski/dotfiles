@@ -5,15 +5,18 @@ alias hide_hidden="defaults write com.apple.Finder AppleShowAllFiles NO && killa
 alias ssh-key='pbcopy < ~/.ssh/id_rsa.pub'
 
 alias osx-conf='code $DOTFILES'
-alias docker-kill-all='docker kill $(docker ps -q)'ą || echo "Warning: docker not found"
-alias docker-rm-all='docker rm $(docker ps -a -q)' || echo "Warning: docker not found"
+alias docker-kill-all='docker kill $(docker ps -q)'
+alias docker-rm-all='docker rm $(docker ps -a -q)'
 
 alias bci='brew install --cask'
 alias bi='brew install'
-alias @='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 command -v trash >/dev/null 2>&1 && alias t='trash' || echo "Warning: trash not found"
-command -v podman >/dev/null 2>&1 && alias docker='podman' || echo "Warning: podman not found"
+if ! command -v docker >/dev/null 2>&1 && command -v podman >/dev/null 2>&1; then
+  alias docker='podman'
+elif ! command -v docker >/dev/null 2>&1; then
+  echo "Warning: docker and podman not found"
+fi
 command -v ccat >/dev/null 2>&1 && alias cat='ccat' || echo "Warning: ccat not found"
 command -v ncal >/dev/null 2>&1 && alias cal='ncal' || echo "Warning: ncal not found"
 command -v prettyping >/dev/null 2>&1 && alias ping='prettyping --nolegend' || echo "Warning: prettyping not found"
@@ -26,3 +29,11 @@ alias pip="pip3"
 
 alias moment-guess="npx moment-guess --date "
 alias sherlock='python3 $HOME/bin/sherlock/sherlock'
+
+# Junie in tmux with dated session
+junie() {
+    local name="junie-$(date +%Y-%m-%d-%H%M)"
+    tmux new-session -s "$name" -c ~/Priv '/opt/homebrew/bin/junie'
+}
+
+unalias gws

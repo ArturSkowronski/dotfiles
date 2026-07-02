@@ -103,6 +103,58 @@ function code-maat () {
   ps -ao pid,ppid,comm= | awk "$PROG" | xargs kill
 }
 
+# Load TornadoVM project environment on demand (sets JAVA_HOME, PATH to project JDK/maven/cmake)
+tornado() {
+  . "$HOME/Projects/TornadoVM/setvars.sh"
+}
+
+# yt-instrumental - download YouTube audio and extract instrumental and vocals
+# Usage: yt-instrumental <youtube_url> [output_dir]
+yt-instrumental() {
+  local url="$1"
+  local outdir="${2:-$HOME/Downloads}"
+
+  if [[ -z "$url" ]]; then
+    echo "Usage: yt-instrumental <youtube_url> [output_dir]"
+    return 1
+  fi
+
+  echo "[1/3] Downloading audio..."
+  local tmpdir=$(mktemp -d)
+  yt-dlp -x --audio-format mp3 -o "$tmpdir/%(title)s.%(ext)s" "$url" || return 1
+
+  local mp3file=$(ls "$tmpdir"/*.mp3 | head -1)
+  if [[ -z "$mp3file" ]]; then
+    echo "Error: MP3 download failed."
+    rm -rf "$tmpdir"
+    return 1
+  fi
+
+  echo "[2/3] Separating vocals (this may take a few minutes)..."
+  demucs --two-stems=vocals -o "$tmpdir/demucs_output" "$mp3file" || return 1
+
+  local title=$(basename "$mp3file" .mp3)
+  local clean_title=$(echo "$title" | perl -Mutf8 -CS -pe 'tr/ąćęłńóśźżĄĆĘŁŃÓŚŹŻ/acelnoszzACELNOSZZ/; s/ /-/g')
+  local target_dir="$outdir/$clean_title"
+  local instrumental="$tmpdir/demucs_output/htdemucs/$title/no_vocals.wav"
+  local vocals="$tmpdir/demucs_output/htdemucs/$title/vocals.wav"
+
+  if [[ -f "$instrumental" && -f "$vocals" ]]; then
+    echo "[3/3] Converting to MP3 and saving to $target_dir..."
+    mkdir -p "$target_dir"
+    cp "$mp3file" "$target_dir/${clean_title}_original.mp3"
+    ffmpeg -hide_banner -loglevel error -i "$instrumental" -q:a 0 "$target_dir/${clean_title}_instrumental.mp3" -y
+    ffmpeg -hide_banner -loglevel error -i "$vocals" -q:a 0 "$target_dir/${clean_title}_vocal.mp3" -y
+    echo "Done! Saved to: $target_dir"
+  else
+    echo "Error: separated files not found."
+    rm -rf "$tmpdir"
+    return 1
+  fi
+
+  rm -rf "$tmpdir"
+}
+
 if [[ "$SHELL" == *zsh ]]; then
   zle -N :only
   bindkey "^Wo" :only
