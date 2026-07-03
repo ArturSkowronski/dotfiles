@@ -15,7 +15,6 @@ set +o noclobber
 . ~/.shell/init/fnm.sh
 . ~/.shell/init/sdkman.sh
 . ~/.shell/init/pyenv.sh
-. ~/.shell/init/kiro.sh
 . ~/.shell/init/tmux.sh
 
 # Added by Antigravity
