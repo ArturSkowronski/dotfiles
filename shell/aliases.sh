@@ -31,4 +31,9 @@ junie() {
     tmux new-session -s "$name" -c ~/Priv '/opt/homebrew/bin/junie'
 }
 
+# Open the Obsidian wiki vault in a Claude Code session from anywhere
+wiki() {
+    (cd ~/wiki && claude "$@")
+}
+
 unalias gws
