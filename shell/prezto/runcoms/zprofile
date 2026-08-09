@@ -73,3 +73,7 @@ fi
 
 TMPPREFIX="${TMPDIR%/}/zsh"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/askowronski/.local/bin:$PATH"

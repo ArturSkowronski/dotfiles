@@ -24,6 +24,10 @@ if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)
 # peon-ping quick controls
 alias peon="bash ~/.claude/hooks/peon-ping/peon.sh"
 
+
+# Added by Antigravity CLI installer
+export PATH="/Users/askowronski/.local/bin:$PATH"
+
 # --- Kindle / KOReader helpers (added by Claude) ---
 # Push one or more books to the Kindle over SSH (works while KOReader is running).
 # Uses cat-over-ssh so it needs only a shell on the device (no rsync/scp required).
