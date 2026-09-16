@@ -61,3 +61,19 @@ kindle-send() {
 # Open a shell on the Kindle (KOReader must be running with SSH started/autostart).
 kindle-ssh() { ssh "$(kindle-host || echo kindle)"; }
 # --- end Kindle helpers ---
+
+# >>> grok installer >>>
+export PATH="$HOME/.grok/bin:$PATH"
+fpath=(~/.grok/completions/zsh $fpath)
+autoload -Uz compinit && compinit -C
+# <<< grok installer <<<
+
+# >>> vercel: dwa konta obok siebie >>>
+# Domyslne `vercel` zostaje na koncie osobistym (me@).
+# `vercelvl` uzywa osobnej sesji dla askowronski@virtuslab.com, czyli zespolu
+# virtuslab-web-dev. Sesje sa niezalezne: osobne tokeny, osobny currentTeam,
+# wylogowanie jednej nie rusza drugiej.
+vercelvl() {
+  command vercel --global-config "$HOME/.vercel-virtuslab" "$@"
+}
+# <<< vercel: dwa konta obok siebie <<<

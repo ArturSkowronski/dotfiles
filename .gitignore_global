@@ -103,3 +103,4 @@ venv
 node_modules
 .sass-cache
 .secrets.sh
+**/.claude/settings.local.json
