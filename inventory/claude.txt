@@ -1,0 +1,36 @@
+# claude plugins
+codex@openai-codex
+frontend-design@claude-plugins-official
+gitbook@gitbook-skills
+last30days@last30days-skill
+marketing-skills@marketingskills
+superpowers@claude-plugins-official
+vercel@claude-plugins-official
+visdom-intel@visdom
+warp@claude-code-warp
+# claude skills
+app-dev-weekly-summary
+building-vac-demos
+design-taste-frontend
+deslop-doc
+deslop-en
+enrich-with-wiki
+faktury-do-saldeo
+find-skills
+html-to-single-page-pdf
+instapaper-triage
+java-best-practices
+jira-delegation
+jira-ticket-other
+jvm-weekly
+ksef-cli
+miodkuj
+officecli
+peon-ping-toggle
+superset
+verifying-business-emails
+vidia
+visdom-carousel
+visdom-documents
+wiki-daily-ingest
+youtube-vocal-separation

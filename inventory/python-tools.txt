@@ -1,0 +1,6 @@
+# uv tool
+rendergit v0.1.0
+- rendergit
+# pipx
+aicodeprep-gui 1.1.2
+pytube 15.0.0

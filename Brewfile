@@ -2,6 +2,7 @@ tap "andreybleme/lazycontainer", "https://github.com/andreybleme/lazycontainer"
 tap "ankitpokhrel/jira-cli"
 tap "antoniorodr/memo"
 tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
+tap "claytono/tap"
 tap "espanso/espanso"
 tap "james-see/tap"
 tap "jetbrains/junie", "https://github.com/JetBrains/homebrew-junie.git"
@@ -12,6 +13,8 @@ tap "th-ch/youtube-music"
 tap "yakitrak/yakitrak"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Apple Intelligence from the command-line, with OpenAi-compatible API server
+brew "apfel"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Record and share terminal sessions
@@ -22,6 +25,8 @@ brew "autoconf"
 brew "awscli"
 # Microsoft Azure CLI 2.0
 brew "azure-cli"
+# Bash Automated Testing System
+brew "bats-core"
 # Linux/OSX/FreeBSD resource monitor
 brew "bpytop"
 # Software library to render fonts
@@ -30,6 +35,8 @@ brew "freetype"
 brew "glib"
 # Like cat but displays content with syntax highlighting
 brew "ccat"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
 # Cross-platform make
 brew "cmake"
 # GNU File, Shell, and Text utilities
@@ -40,14 +47,20 @@ brew "harfbuzz"
 brew "libtiff"
 # Pure Scala Artifact Fetching
 brew "coursier"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# .NET Core
+brew "dotnet"
 # Terminal document viewer for .docx files
 brew "doxx"
 # Embeddable SQL OLAP Database Management System
 brew "duckdb"
 # Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream select audio and video codecs
@@ -86,6 +99,8 @@ brew "git-lfs"
 brew "glab"
 # Java EE application server
 brew "glassfish"
+# Render markdown on the CLI
+brew "glow"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
 # Library for USB device access
@@ -120,6 +135,8 @@ brew "llmfit"
 brew "make"
 # Java-based project management
 brew "maven"
+# Publisher CLI tool for the Official Model Context Protocol (MCP) Registry
+brew "mcp-publisher"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Remote terminal application
@@ -136,6 +153,8 @@ brew "node"
 brew "openblas"
 # Package for scientific computing with Python
 brew "numpy"
+# Adds an OCR text layer to scanned PDF files
+brew "ocrmypdf"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # AI coding agent, built for the terminal
@@ -150,8 +169,8 @@ brew "pandoc"
 brew "pipx"
 # Draw UML diagrams
 brew "plantuml"
-# Tool for managing OCI containers and pods
-brew "podman"
+# Paste PNG into files
+brew "pngpaste"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Wrapper to colorize and simplify ping's output
@@ -182,10 +201,16 @@ brew "rust"
 brew "sbt"
 # Scala language runner and build tool
 brew "scala-cli"
+# Create beautiful image of your source code
+brew "silicon"
 # Non-interactive SSH password auth
 brew "sshpass"
 # Multi-modal AI tool to extract and summarize content
 brew "summarize"
+# Change macOS audio source from the command-line
+brew "switchaudio-osx"
+# Open source continuous file synchronization application
+brew "syncthing", restart_service: :changed
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # Modernized, complete, self-contained TeX/LaTeX engine
@@ -202,6 +227,8 @@ brew "unbound"
 brew "uv"
 # Syntax-aware linter for prose
 brew "vale"
+# Your CLI home video recorder
+brew "vhs"
 # Pager/text based browser
 brew "w3m"
 # Internet file retriever
@@ -210,37 +237,28 @@ brew "wget"
 brew "z"
 # Compression and file packaging/archive utility
 brew "zip"
+# MCP server for UniFi Network Controller
+brew "claytono/tap/go-unifi-mcp", trusted: true
 # View, print, and comment on PDF documents
 cask "adobe-acrobat-reader"
 # Command-line tools for building and debugging Android apps
 cask "android-commandlinetools"
-# Memory training application
-cask "anki"
 # Agent orchestration platform
 cask "antigravity"
 # Allows connection to a computer remotely
 cask "anydesk"
 # Application uninstaller
 cask "appcleaner"
-# SQL client and database management tool
-cask "arctype"
 # Multi-track audio editor and recorder
 cask "audacity"
-# Audio utility
-cask "background-music"
-# Open source IDE for exploring and testing APIs
-cask "bruno"
 # Utility that prevents the system from going to sleep
 cask "caffeine"
 # E-books management software
 cask "calibre"
 # 3D printing slicer software
 cask "chitubox"
-# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
-cask "cmux"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# Create and run Linux containers using lightweight virtual machines
 cask "container"
 # Write, edit, and chat about your code with AI
 cask "cursor"
@@ -256,8 +274,6 @@ cask "eclipse-ide"
 cask "espanso"
 # Collaborative team software
 cask "figma"
-# Official CLI tool for Concourse CI
-cask "fly"
 cask "font-monaspace"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
@@ -277,6 +293,10 @@ cask "intellij-idea"
 cask "jordanbaird-ice"
 # File archiver
 cask "keka"
+# Slicer for Resin 3D printers
+cask "lycheeslicer"
+# Meeting transcription and analysis application
+cask "meetily"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Open-source software for live streaming and screen recording
@@ -285,18 +305,12 @@ cask "obs"
 cask "playonmac"
 # Home media player
 cask "plex"
-# Browse, manage, inspect containers and images
-cask "podman-desktop"
-# Collaboration platform for API development
-cask "postman"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Simple menu bar app to view and interact with reminders
 cask "reminders-menubar"
 # AI-powered writing assistant
 cask "rewritebar"
-# Displays folders and archives of images and PDF files
-cask "sequential"
 # Comic viewer/reader
 cask "simple-comic"
 # Video game digital distribution service
@@ -305,8 +319,6 @@ cask "steam"
 cask "syntax-highlight"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
-# Remote access and connectivity software focused on security
-cask "teamviewer"
 # Open-source code editor
 cask "visual-studio-code"
 # Game Boy Advance emulator
@@ -315,10 +327,9 @@ cask "visualboyadvance-m"
 cask "visualvm"
 # Multimedia player
 cask "vlc"
-# Simple menu bar app to download YouTube movies
-cask "youtube-downloader"
-# YouTube Music Desktop App
-cask "th-ch/youtube-music/youtube-music"
+# Comic reader
+cask "yacreader"
+cask "youtube-music"
 # Multiplayer code editor
 cask "zed"
 vscode "aaron-bond.better-comments"
@@ -393,11 +404,14 @@ vscode "xyz.local-history"
 vscode "yoshinorin.current-file-path"
 vscode "yzhang.markdown-all-in-one"
 vscode "ziyasal.vscode-open-in-github"
-cargo "agg"
+go "github.com/vburojevic/instapaper-cli/cmd/ip"
+cargo "agg", source: "https://github.com/asciinema/agg"
+cargo "cargo-mutants"
 cargo "cargo-zigbuild"
-uv "rendergit"
-npm "@google/gemini-cli"
+uv "rendergit", source: "git+https://github.com/karpathy/rendergit"
+npm "@conorbronsdon/substack-mcp"
 npm "@googleworkspace/cli"
+npm "@higgsfield/cli"
 npm "@openai/codex"
 npm "@steipete/summarize"
 npm "@virtuslab/visdom-ui"
@@ -409,6 +423,7 @@ npm "corepack"
 npm "happy-coder"
 npm "mcporter"
 npm "openclaw"
+npm "playwright"
 npm "pnpm"
 npm "terminalizer"
 npm "vercel"

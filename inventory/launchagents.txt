@@ -1,0 +1,10 @@
+com.arturskowronski.quartz-wiki.plist
+com.local.instapaper-triage.plist
+com.local.jvm-daily.plist
+com.local.meetily-ingest.plist
+com.local.visdom-intel-review.plist
+com.local.visdom-intel-weekly.plist
+com.local.wiki-auto-pull.plist
+com.local.wiki-backfill-retry.plist
+com.local.wiki-evening-digest.plist
+com.local.wiki-reconcile.plist
