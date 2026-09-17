@@ -7,7 +7,6 @@ tap "espanso/espanso"
 tap "james-see/tap"
 tap "max-sixty/worktrunk"
 tap "steipete/tap"
-tap "th-ch/youtube-music"
 tap "yakitrak/yakitrak"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
@@ -268,7 +267,6 @@ cask "insomnia"
 # Java IDE by JetBrains
 cask "intellij-idea"
 # Menu bar manager
-cask "jordanbaird-ice"
 # File archiver
 cask "keka"
 # Slicer for Resin 3D printers
@@ -282,7 +280,6 @@ cask "obs"
 # Allows installation and use of software designed for Windows
 cask "playonmac"
 # Home media player
-cask "plex"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Simple menu bar app to view and interact with reminders
@@ -306,7 +303,6 @@ cask "visualvm"
 # Multimedia player
 cask "vlc"
 # Comic reader
-cask "youtube-music"
 # Multiplayer code editor
 cask "zed"
 vscode "aaron-bond.better-comments"
