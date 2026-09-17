@@ -221,6 +221,7 @@ brew "z"
 brew "zip"
 # MCP server for UniFi Network Controller
 brew "claytono/tap/go-unifi-mcp", trusted: true
+brew "asmvik/formulae/yabai"
 # View, print, and comment on PDF documents
 # Command-line tools for building and debugging Android apps
 cask "android-commandlinetools"
