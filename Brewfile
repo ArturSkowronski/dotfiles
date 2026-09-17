@@ -27,6 +27,7 @@ brew "bats-core"
 # Linux/OSX/FreeBSD resource monitor
 brew "bpytop"
 # Software library to render fonts
+brew "container"
 brew "freetype"
 # Core application library for C
 brew "glib"
@@ -237,7 +238,6 @@ cask "calibre"
 cask "chitubox"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-cask "container"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Server and cloud storage browser
