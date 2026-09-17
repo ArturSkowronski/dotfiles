@@ -5,16 +5,13 @@ tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
 tap "claytono/tap"
 tap "espanso/espanso"
 tap "james-see/tap"
-tap "jetbrains/junie", "https://github.com/JetBrains/homebrew-junie.git"
 tap "max-sixty/worktrunk"
-tap "openclaw/tap"
 tap "steipete/tap"
 tap "th-ch/youtube-music"
 tap "yakitrak/yakitrak"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Apple Intelligence from the command-line, with OpenAi-compatible API server
-brew "apfel"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Record and share terminal sessions
@@ -98,7 +95,6 @@ brew "git-lfs"
 # Open-source GitLab command-line tool
 brew "glab"
 # Java EE application server
-brew "glassfish"
 # Render markdown on the CLI
 brew "glow"
 # GNU Transport Layer Security (TLS) Library
@@ -110,7 +106,6 @@ brew "go"
 # Ping, but with a graph
 brew "gping"
 # Open-source build automation tool based on the Groovy and Kotlin DSL
-brew "gradle"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Convert source code to formatted text with syntax highlighting
@@ -126,11 +121,8 @@ brew "libmicrohttpd"
 # Reliable Internet Stream Transport (RIST)
 brew "librist"
 # LLM inference in C/C++
-brew "llama.cpp"
 # Access large language models from the command-line
-brew "llm"
 # Find what models run on your hardware
-brew "llmfit"
 # Utility for directing compilation
 brew "make"
 # Java-based project management
@@ -148,7 +140,6 @@ brew "ncdu"
 # Easy to use, powerful, and reliable system to process and distribute data
 brew "nifi"
 # Open-source, cross-platform JavaScript runtime environment
-brew "node"
 # Optimized BLAS library
 brew "openblas"
 # Package for scientific computing with Python
@@ -162,7 +153,6 @@ brew "opencode"
 # Development kit for the Java programming language
 brew "openjdk@17"
 # Open Visual Inference And Optimization toolkit for AI inference
-brew "openvino"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
 # Execute binaries from Python packages in isolated environments
@@ -180,23 +170,16 @@ brew "pyenv", args: ["HEAD"]
 # Python bindings for v5 of Qt
 brew "pyqt@5"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Python interface to Tcl/Tk
-brew "python-tk@3.11"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Generic machine emulator and virtualizer
-brew "qemu"
 # Rsync for cloud storage
 brew "rclone"
 # Persistent key-value database, with built-in net interface
-brew "redis"
 # Safe, concurrent, practical language
-brew "rust"
 # Build tool for Scala projects
 brew "sbt"
 # Scala language runner and build tool
@@ -206,7 +189,6 @@ brew "silicon"
 # Non-interactive SSH password auth
 brew "sshpass"
 # Multi-modal AI tool to extract and summarize content
-brew "summarize"
 # Change macOS audio source from the command-line
 brew "switchaudio-osx"
 # Open source continuous file synchronization application
@@ -214,7 +196,6 @@ brew "syncthing", restart_service: :changed
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # Modernized, complete, self-contained TeX/LaTeX engine
-brew "tectonic"
 # Terminal multiplexer
 brew "tmux"
 # Lightweight BitTorrent client
@@ -240,15 +221,12 @@ brew "zip"
 # MCP server for UniFi Network Controller
 brew "claytono/tap/go-unifi-mcp", trusted: true
 # View, print, and comment on PDF documents
-cask "adobe-acrobat-reader"
 # Command-line tools for building and debugging Android apps
 cask "android-commandlinetools"
 # Agent orchestration platform
-cask "antigravity"
 # Allows connection to a computer remotely
 cask "anydesk"
 # Application uninstaller
-cask "appcleaner"
 # Multi-track audio editor and recorder
 cask "audacity"
 # Utility that prevents the system from going to sleep
@@ -265,7 +243,6 @@ cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Generate a timeline of your day, automatically
-cask "dayflow"
 # Voice and text chat software
 cask "discord"
 # Eclipse integrated development environment
@@ -328,7 +305,6 @@ cask "visualvm"
 # Multimedia player
 cask "vlc"
 # Comic reader
-cask "yacreader"
 cask "youtube-music"
 # Multiplayer code editor
 cask "zed"
@@ -412,17 +388,10 @@ uv "rendergit", source: "git+https://github.com/karpathy/rendergit"
 npm "@conorbronsdon/substack-mcp"
 npm "@googleworkspace/cli"
 npm "@higgsfield/cli"
-npm "@openai/codex"
-npm "@steipete/summarize"
 npm "@virtuslab/visdom-ui"
 npm "@visdom/ui"
-npm "clawdbot"
-npm "clawdhub"
-npm "cline"
 npm "corepack"
-npm "happy-coder"
 npm "mcporter"
-npm "openclaw"
 npm "playwright"
 npm "pnpm"
 npm "terminalizer"

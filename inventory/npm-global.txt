@@ -1,20 +1,13 @@
-├── @conorbronsdon/substack-mcp@0.6.2
+├── @conorbronsdon/substack-mcp@1.2.0
 ├── @googleworkspace/cli@0.22.5
-├── @higgsfield/cli@1.1.19
-├── @openai/codex@0.142.5
-├── @steipete/summarize@0.14.1
+├── @higgsfield/cli@1.1.25
+├── @mermaid-js/mermaid-cli@11.17.0
 ├── @virtuslab/visdom-ui@0.3.0 -> ./../../../../../../../Projects/visdom-design-system
 ├── @visdom/ui@npm:@virtuslab/visdom-ui@0.3.0 -> ./../../../../../../../Projects/visdom-design-system
-├── clawdbot@2026.1.24-3
-├── clawdhub@0.3.0
-├── cline@3.0.58
-├── corepack@0.34.7
-├── happy-coder@1.1.9
-├── mcporter@0.9.0
-├── npm@11.18.0
-├── openclaw@2026.6.11
-├── playwright@1.62.1
-├── pnpm@11.9.0
-├── terminalizer@0.12.0
-└── vercel@59.1.4
+├── corepack@0.36.0
+├── mcporter@0.13.13
+├── npm@11.19.0
+├── playwright@1.63.0
+├── pnpm@12.4.2
+└── vercel@59.20.0
 

@@ -1,2 +1,3 @@
-* v22.20.0 default, lts-latest
+* v22.20.0
+* v24.21.0 default, lts-latest
 * system

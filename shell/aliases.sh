@@ -25,12 +25,6 @@ alias pip="pip3"
 alias moment-guess="npx moment-guess --date "
 alias sherlock='python3 $HOME/bin/sherlock/sherlock'
 
-# Junie in tmux with dated session
-junie() {
-    local name="junie-$(date +%Y-%m-%d-%H%M)"
-    tmux new-session -s "$name" -c ~/Priv '/opt/homebrew/bin/junie'
-}
-
 # Open the Obsidian wiki vault in a Claude Code session from anywhere
 wiki() {
     (cd ~/wiki && claude "$@")
